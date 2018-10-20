@@ -1,7 +1,7 @@
 {% set name = "hyperspy-gui-ipywidgets" %}
 {% set filename = "hyperspy_gui_ipywidgets" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "18fac4d12068b6ed96a989cf4295fea1bdfaafa4f036d014b7ad993465c7e9ab" %}
+{% set version = "1.1.1" %}
+{% set sha256 = "068a958e083e872a0b86556a68af032d00bf3ccbd6d573801d59fd5b63bea481" %}
 
 
 package:
@@ -15,7 +15,7 @@ source:
 
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
