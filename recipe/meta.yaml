@@ -31,8 +31,6 @@ requirements:
     - ipywidgets >=6.0
 
 test:
-  requires:
-    - pillow >5.2
   imports:
     - hyperspy_gui_ipywidgets
 
@@ -41,6 +39,7 @@ test:
     - py.test --pyargs hyperspy_gui_ipywidgets  # [unix]
 
   requires:
+    - pillow >5.2
     - pytest
 
 about:
