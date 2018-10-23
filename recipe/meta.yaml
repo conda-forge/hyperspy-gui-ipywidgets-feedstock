@@ -33,6 +33,8 @@ requirements:
 test:
   imports:
     - hyperspy_gui_ipywidgets
+  requires:
+    - pillow >5.2
 
   commands:
     - export MPLBACKEND="agg"  # [unix]
