@@ -31,10 +31,10 @@ requirements:
     - ipywidgets >=6.0
 
 test:
-  imports:
-    - hyperspy_gui_ipywidgets
   requires:
     - pillow >5.2
+  imports:
+    - hyperspy_gui_ipywidgets
 
   commands:
     - export MPLBACKEND="agg"  # [unix]
