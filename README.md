@@ -14,9 +14,7 @@ Summary: ipywidgets GUI elements for HyperSpy.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/hyperspy-gui-ipywidgets-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/hyperspy-gui-ipywidgets-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/hyperspy-gui-ipywidgets-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/hyperspy-gui-ipywidgets-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/hyperspy-gui-ipywidgets-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/hyperspy-gui-ipywidgets-feedstock/branch/master)
+All platforms: ![noarch disabled](https://img.shields.io/badge/noarch-disabled-lightgrey.svg)
 
 Current release info
 ====================
