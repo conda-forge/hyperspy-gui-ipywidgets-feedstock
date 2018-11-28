@@ -17,16 +17,15 @@ source:
 build:
   number: 1
   noarch: python
-  skip: True  # [py2k]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
 requirements:
   build:
-    - python
+    - python >=3.5
     - pip
 
   run:
-    - python
+    - python >=3.5
     - link-traits
     - hyperspy >=1.4
     - ipywidgets >=6.0
@@ -36,11 +35,10 @@ test:
     - hyperspy_gui_ipywidgets
 
   commands:
-    - export MPLBACKEND="agg"  # [unix]
-    - pytest --pyargs hyperspy_gui_ipywidgets  # [unix]
+    - export MPLBACKEND="agg"
+    - pytest --pyargs hyperspy_gui_ipywidgets
 
   requires:
-    - pillow >5.2 # [win]
     - pytest
 
 about:
