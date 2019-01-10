@@ -15,7 +15,7 @@ source:
 
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=3.5
     - link-traits
-    - hyperspy >=1.4
+    - hyperspy-base
     - ipywidgets >=6.0
 
 test:
