@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=3.5
     - link-traits
-    - hyperspy-base >=1.5
+    - hyperspy-base >=1.6
     - ipywidgets >=6.0
 
 test:
