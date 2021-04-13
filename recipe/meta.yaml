@@ -1,7 +1,7 @@
 {% set name = "hyperspy-gui-ipywidgets" %}
 {% set filename = "hyperspy_gui_ipywidgets" %}
-{% set version = "1.3.0" %}
-{% set sha256 = "e2453811c6f30bcc0f3ee6eed7ea69acd59274a0a4213c68684ea61d4dbcaae6" %}
+{% set version = "1.4.0" %}
+{% set sha256 = "dc112a3dd4d53121970e56ac45273c12daa6212414182e14824e95fb24be167b" %}
 
 
 package:
@@ -20,7 +20,7 @@ build:
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
 
