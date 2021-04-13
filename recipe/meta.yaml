@@ -21,14 +21,14 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
 
   run:
-    - python >=3.5
+    - python >=3.6
     - link-traits
-    - hyperspy-base >=1.6
-    - ipywidgets >=6.0
+    - hyperspy-base >=1.6.2
+    - ipywidgets >=7.0
 
 test:
   imports:
