@@ -1,5 +1,4 @@
-{% set name = "hyperspy-gui-ipywidgets" %}
-{% set filename = "hyperspy_gui_ipywidgets" %}
+{% set name = "hyperspy_gui_ipywidgets" %}
 {% set version = "1.5.0" %}
 {% set sha256 = "e5b59279ac15cec93c7699295bb904d967a545bf3e341356ffc6753f4c7f3a2d" %}
 
@@ -9,37 +8,47 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ filename }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ filename }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-
 
 build:
   number: 0
   noarch: python
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
-requirements:
-  host:
-    - python >=3.7
-    - pip
+outputs:
+  - name: {{ name|lower }}
+    script: build_base.sh
+    requirements:
+      host:
+        - python >=3.7
+        - pip
 
-  run:
-    - python >=3.7
-    - link-traits
-    - hyperspy-base >=1.7.0
-    - ipywidgets >=7.0
+      run:
+        - python >=3.7
+        - link-traits
+        - hyperspy-base >=1.7.0
+        - ipywidgets >=7.0
 
-test:
-  imports:
-    - hyperspy_gui_ipywidgets
+    test:
+      imports:
+        - hyperspy_gui_ipywidgets
+      commands:
+        - pip check
+        - export MPLBACKEND="agg"
+        - pytest --pyargs hyperspy_gui_ipywidgets
+      requires:
+        - pip
+        - pytest
 
-  commands:
-    - export MPLBACKEND="agg"
-    - pytest --pyargs hyperspy_gui_ipywidgets
-
-  requires:
-    - pytest
+  - name: hyperspy-gui-ipywidgets
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - {{ pin_subpackage('hyperspy_gui_ipywidgets', max_pin="x.x.x") }}
+    test:
+      imports:
+        - hyperspy_gui_ipywidgets
 
 about:
   home: https://github.com/hyperspy/hyperspy_gui_ipywidgets
