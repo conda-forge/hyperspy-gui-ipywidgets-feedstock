@@ -1,11 +1,11 @@
-About hyperspy-gui-ipywidgets
-=============================
+About hyperspy_gui_ipywidgets-feedstock
+=======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hyperspy-gui-ipywidgets-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hyperspy/hyperspy_gui_ipywidgets
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hyperspy-gui-ipywidgets-feedstock/blob/main/LICENSE.txt)
 
 Summary: ipywidgets GUI elements for HyperSpy.
 
@@ -28,27 +28,28 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-hyperspy--gui--ipywidgets-green.svg)](https://anaconda.org/conda-forge/hyperspy-gui-ipywidgets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hyperspy-gui-ipywidgets.svg)](https://anaconda.org/conda-forge/hyperspy-gui-ipywidgets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hyperspy-gui-ipywidgets.svg)](https://anaconda.org/conda-forge/hyperspy-gui-ipywidgets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hyperspy-gui-ipywidgets.svg)](https://anaconda.org/conda-forge/hyperspy-gui-ipywidgets) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hyperspy_gui_ipywidgets-green.svg)](https://anaconda.org/conda-forge/hyperspy_gui_ipywidgets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hyperspy_gui_ipywidgets.svg)](https://anaconda.org/conda-forge/hyperspy_gui_ipywidgets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hyperspy_gui_ipywidgets.svg)](https://anaconda.org/conda-forge/hyperspy_gui_ipywidgets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hyperspy_gui_ipywidgets.svg)](https://anaconda.org/conda-forge/hyperspy_gui_ipywidgets) |
 
-Installing hyperspy-gui-ipywidgets
+Installing hyperspy_gui_ipywidgets
 ==================================
 
-Installing `hyperspy-gui-ipywidgets` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `hyperspy_gui_ipywidgets` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `hyperspy-gui-ipywidgets` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `hyperspy-gui-ipywidgets, hyperspy_gui_ipywidgets` can be installed with `conda`:
 
 ```
-conda install hyperspy-gui-ipywidgets
+conda install hyperspy-gui-ipywidgets hyperspy_gui_ipywidgets
 ```
 
 or with `mamba`:
 
 ```
-mamba install hyperspy-gui-ipywidgets
+mamba install hyperspy-gui-ipywidgets hyperspy_gui_ipywidgets
 ```
 
 It is possible to list all of the versions of `hyperspy-gui-ipywidgets` available on your platform with `conda`:
@@ -118,17 +119,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating hyperspy-gui-ipywidgets-feedstock
+Updating hyperspy_gui_ipywidgets-feedstock
 ==========================================
 
-If you would like to improve the hyperspy-gui-ipywidgets recipe or build a new
+If you would like to improve the hyperspy_gui_ipywidgets recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/hyperspy-gui-ipywidgets-feedstock are
+Note that all branches in the conda-forge/hyperspy_gui_ipywidgets-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
