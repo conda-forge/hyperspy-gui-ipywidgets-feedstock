@@ -21,13 +21,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - setuptools >=64
+    - setuptools-scm >=8
 
   run:
-    - python >=3.7
+    - python >=3.8
     - link-traits
-    - hyperspy-base >=1.7.0
+    - hyperspy-base >=2.0
     - ipywidgets >=7.0
 
 test:
