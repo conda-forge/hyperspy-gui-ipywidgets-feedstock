@@ -1,7 +1,7 @@
 {% set name = "hyperspy-gui-ipywidgets" %}
 {% set filename = "hyperspy_gui_ipywidgets" %}
-{% set version = "2.0.1" %}
-{% set sha256 = "54821a6c9fd1cd44d9e3e0e55587a2a8dcf8f28146417762a4ed80220c1d244a" %}
+{% set version = "2.0.2" %}
+{% set sha256 = "f5550f8e3e5e8a9d50cb91b1bd9f6c6350dabeb39466ef1c3838539a9864a75a" %}
 
 
 package:
