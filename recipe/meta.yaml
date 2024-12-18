@@ -10,24 +10,24 @@ package:
 
 source:
   fn: {{ filename }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ filename }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ filename }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools >=64
     - setuptools-scm >=8
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - link-traits
     - hyperspy-base >=2.0
     - ipywidgets >=7.0
@@ -43,6 +43,7 @@ test:
 
   requires:
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/hyperspy/hyperspy_gui_ipywidgets
