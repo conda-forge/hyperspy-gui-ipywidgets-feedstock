@@ -1,7 +1,7 @@
 {% set name = "hyperspy-gui-ipywidgets" %}
 {% set filename = "hyperspy_gui_ipywidgets" %}
-{% set version = "2.0.3" %}
-{% set sha256 = "643d8e3199b7a6ad987247aba64c765840b0341f480a3abbf640ecafce671802" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "c9038e1c7300832cf471c7eb3ea40fc8209bd3877e83c1bab7513f9af9b4ae11" %}
 
 
 package:
@@ -15,7 +15,7 @@ source:
 
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
@@ -29,8 +29,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - link-traits
-    - hyperspy-base >=2.0
-    - ipywidgets >=7.0
+    - hyperspy-base >=2.3.0
+    - ipywidgets >=8.0
     - ipympl
 
 test:
