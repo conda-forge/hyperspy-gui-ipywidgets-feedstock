@@ -29,7 +29,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - link-traits
-    - hyperspy-base >=2.3.0
+    - hyperspy-base >=2.6.0
     - ipywidgets >=8.0
     - ipympl
 
