@@ -1,7 +1,7 @@
 {% set name = "hyperspy-gui-ipywidgets" %}
 {% set filename = "hyperspy_gui_ipywidgets" %}
-{% set version = "2.1.1" %}
-{% set sha256 = "0c92364cbc23a26f6ecc4f82ca98a5582c705f12bd3ce17fce4e0a23342bfc81" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "c46b04d56f7121299af3fa5ced4f0f3b7547de724bd65ce450ffce62af2cd3fd" %}
 
 
 package:
@@ -29,7 +29,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - link-traits
-    - hyperspy-base >=2.3.0
+    - hyperspy-base >=2.6.0
     - ipywidgets >=8.0
     - ipympl
 
